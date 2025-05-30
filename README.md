@@ -53,6 +53,32 @@ itl_mensagem = o_download->m_get_mensagem( ).
 ```
 
 ---
+## 🛠️ Pré-configuração
+
+### 1️⃣ Criação dos Domínios
+
+Antes de utilizar o componente, é necessário criar os seguintes domínios no SAP:
+
+#### 🔸 **ZDJLM_FORMATO_ARQUIVO** (tipo `CHAR3`)
+| Valor | Descrição |
+|-------|-----------|
+| TXT   | TXT       |
+| CSV   | CSV       |
+| XML   | XML       |
+
+#### 🔸 **ZDJLM_LOCAL_SERVIDOR** (tipo `CHAR1`)
+| Valor | Descrição |
+|-------|-----------|
+| S     | Servidor  |
+| L     | Local     |
+
+### 2️⃣ Criação dos Elementos de Dados
+
+Crie também os elementos de dados associados aos domínios:
+
+- **ZEJLM_FORMATO_ARQUIVO** – baseado no domínio `ZDJLM_FORMATO_ARQUIVO`
+- **ZEJLM_LOCAL_SERVIDOR** – baseado no domínio `ZDJLM_LOCAL_SERVIDOR`
+---
 
 ## 💡 Observações
 
